@@ -1,0 +1,151 @@
+body {
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #f0f0f0;
+    background: #3E0703;
+}        
+
+.slogan {
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 20px;
+}
+#front-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.grid-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.grid-card:hover {
+  transform: scale(1.03);
+}
+
+.grid-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+      
+#news-details {
+display: none; /* Initially hide the details section */
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+margin: 0 auto;
+}
+      
+#news-details img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+      
+#news-details .back-btn, .story-btn {
+  background-color: #001E5A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.logo-cover {
+  display: grid;
+  grid-template-columns: repeat(4, 144px);
+  width: 100%;
+  height: auto;
+  justify-content: center;
+        
+}
+      
+.logo-container {
+  padding: 5px;
+  background: transparent;
+}
+
+.logo {
+  width: 124px;        
+  height: 40px;
+    
+} 
+
+#cnbc {
+  background: black;
+  padding: 5px;
+}
+
+#bbc, #cnn, #fortune {
+  background: white;
+  padding: 5px;
+}
+
+@media (max-width: 650px) {
+
+    .logo-cover {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      width: 100%;
+      height: auto;
+      justify-content: center;
+        
+    }
+
+    .logo-container {
+      padding: 2px;
+    }
+    .logo {
+      width: 60px;
+      height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+  .slogan {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+
+    .logo-cover {
+      display: grid;
+      grid-template-columns: repeat(4, 50px);
+      width: 100%;
+      height: auto;
+      justify-content: center;
+        
+    }
+
+    .logo-container {
+      padding: 1px;
+    }
+    .logo {
+      width: 40px;
+      height: 10px;
+    }
+
+    .slogan {
+      font-size: 12px;
+    }
+}
